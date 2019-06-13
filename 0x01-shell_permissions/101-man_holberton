@@ -1,10 +1,14 @@
 .TH man 2 "13 june 2019" "1.0" "Holberton man page"
 .SH NAME
 .B holberton
+- become a full-stack software engineer.
 .SH SYPNOSIS
+holberton [ALEJANDRO MOGOLLON]
+.SH DESCRIPTION
 Holberton School is a project-based alternative to college for the next generation of software engineers.
 .SH OPTIONS
-holberton does not take any options. However, you can supply studentname.
+.B holberton
+does not take any options. However, you can supply studentname.
 .SH SEE ALSO
 .I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
 .SH BUGS
