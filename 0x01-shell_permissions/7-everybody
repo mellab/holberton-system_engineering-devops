@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod 111 hello \
+sudo chmod a+x hello \
