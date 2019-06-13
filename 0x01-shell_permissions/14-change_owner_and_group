@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown -r betty:holberton \
+sudo chown -R root:x betty:holberton \
