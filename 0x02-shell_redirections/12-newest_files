@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -printf -ctime | sort -rn | head -n 10
+ls -t | head -n 10
