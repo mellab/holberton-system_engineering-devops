@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%.4s" $NUM
+printf '%2f\n' $NUM
