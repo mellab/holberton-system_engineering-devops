@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -printf "%C@ $p\n" | sort -rn | head -n 10
+find . -type f -printf -ctime | sort -rn | head -n 10
