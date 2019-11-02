@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script gives you information about the holbertonschool file
+
+hbs="holbertonschool"
+
+if [ -e $hbs ]
+then
+    echo "$hbs file exists"
+
+    if [ -s $hbs ]
+    then
+	echo "$hbs file is not empty"
+    else
+	echo "$hbs file is empty"
+    fi
+
+    if [ -f $hbs ]
+    then
+	echo "$hbs is a regular file"
+    fi
+else
+    echo "$hbs file does not exist"
+fi
