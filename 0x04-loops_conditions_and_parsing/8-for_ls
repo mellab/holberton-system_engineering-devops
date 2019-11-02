@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This scripts displays:
+# - The content of the current directory
+# - In a list format
+# - Where only the part of the name after the first dash is displayed
+
+for entry in *
+do
+	echo "$entry" | cut -f 2- -d '-'
+done
