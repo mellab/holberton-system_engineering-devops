@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script displays numbers from 1 to 100
+
+for ((counter=1;counter<=100;counter++)); do
+    if ! ((counter%15)); then
+        echo FizzBuzz
+    elif ! ((counter%3)); then
+        echo Fizz
+    elif ! ((counter%5)); then
+        echo Buzz
+    else
+        echo $counter
+    fi;
+done
