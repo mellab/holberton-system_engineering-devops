@@ -46,3 +46,6 @@ flycheck_*.el
 
 # network security
 /network-security.data
+
+# RSA key pair
+0-RSA_public_key
