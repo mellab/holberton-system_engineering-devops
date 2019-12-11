@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script installs a nginx web server
+
+sudo apt update
+sudo apt install nginx curl -y
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+sudo ufw --force enable
+sudo ufw status
+systemctl status nginx
+echo 'Holberton School' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
+sudo service nginx restart
