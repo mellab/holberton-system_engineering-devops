@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script enables nginx through port 80, short and sweet
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx start
+pkill -o nginx
