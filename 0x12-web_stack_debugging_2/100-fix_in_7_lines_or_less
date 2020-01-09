@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script runs nginx as nginx user, short and sweet.
+chmod 644 /etc/nginx/nginx.conf
+chown nginx /etc/nginx/nginx.conf
+sed -i -e 's#listen 80#listen 8080#' -e 's#listen \[::\]:80#listen \[::\]:8080#' /etc/nginx/sites-available/default
+pkill -9 apache
+sudo -u nginx service nginx restart
