@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script installs and configures HAproxy
+
+sudo apt update
+sudo apt install haproxy -y
+echo -e "\nfrontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\tserver 935-web-01 35.231.62.207:80 check\n\tserver 935-web-02 35.231.143.157:80 check" >> /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
